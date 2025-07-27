@@ -1,0 +1,80 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background-color: var(--input-background);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--input-border);
+}
+
+th {
+  background-color: #232323;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: rgba(83, 91, 242, 0.1);
+}
+
+/* Zebra striping for better readability */
+tr:nth-child(even) {
+  background-color: rgba(45, 45, 45, 0.5);
+}
+button {
+  background-color: #535bf2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(83, 91, 242, 0.08);
+}
+
+button:hover,
+button:focus {
+  background-color: #3a41c7;
+  outline: none;
+}
+
+
+/* Update button style */
+.button-update {
+  background-color: #28a745;
+}
+
+.button-update:hover,
+.button-update:focus {
+  background-color: #218838;
+}
+
+/* Delete button style */
+.button-delete {
+  background-color: #dc3545;
+}
+
+.button-delete:hover,
+.button-delete:focus {
+  background-color: #b52a37;
+}
+/* Responsive table */
+@media screen and (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  th, td {
+    padding: 0.75rem;
+  }
+}
